@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #root { height: 100%; }
+
+
+/* Canvas: important for touch */
+.draw-canvas { touch-action: none; }
