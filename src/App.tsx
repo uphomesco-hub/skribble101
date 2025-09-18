@@ -40,7 +40,7 @@ export default function App() {
 
   useEffect(() => {
     const sorted = [...players].sort((a, b) => a.joinedAt - b.joinedAt)
-    setIsOwner(sorted.length && sorted[0].id === me.id)
+    setIsOwner(Boolean(sorted.length && sorted[0].id === me.id))
   }, [players, me.id])
 
   useEffect(() => {
